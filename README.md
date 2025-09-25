@@ -2,15 +2,15 @@
  
   👋 Hi, I'm @france5cogreen
   
-  💼 I work as a Linux consultant, specialized in system administration and security
+  💼 I work as a NOC Engineer, but specialized in system administration and security
   
   👀 My passion lies in software development and expanding my expertise in cybersecurity and penetration testing
   
-  🌱 Currently pursuing the FCP Network Security certification, with VCP and OSCP as my next goal
+  🌱 Currently pursuing the CCNA Network Security certification; FCP Network Security, VCP and OSCP are my next goal
   
-  🔍 Enthusiastic about project management tools, I'm developing a custom solution to enhance my productivity
+  🔍 Enthusiastic about project management tools, I've developed customed solutions to enhance my productivity
   
-  💡 Open to collaborating on open-source projects focused on cybersecurity, Linux automation, and emerging technologies
+  💡 I'm open to collaborating on open-source projects, especially focused on cybersecurity, Linux automation, and emerging technologies
   
 
 - Contact
@@ -21,7 +21,7 @@
   
   ⚡ I love automation and efficiency, always looking for ways to optimize workflows and grow up new ideas
   
-  🎯 I started developing my personal goal-tracking mobile app
+  🎯 I wanna build my own IT company
   
   ♕  I'm passionate about chess... if only I was a stronger player😂
   
