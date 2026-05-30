@@ -1,0 +1,156 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const profile = {
+  name: "Francesco DI RIENZO",
+  role: "Linux & Network Systems Administrator | Cybersecurity Specialist",
+  bio: "System Administrator con una forte passione per la cybersecurity e l'offensive security. Attualmente in preparazione per l'OSCP (Offensive Security Certified Professional), oltre alle certificazioni FCP Network Security e VCP. Cerco un ruolo stimolante in un ambiente high-tech e dinamico per applicare le mie competenze tecniche e crescere nel campo dell'ethical hacking.",
+  email: "francesco.di.rienzo.00@gmail.com",
+  github: "https://github.com/france5cogreen",
+  linkedin: "https://linkedin.com/in/francesco-di-rienzo"
+};
+
+const experiences = [
+  {
+    role: "Network Engineer",
+    company: "MINISTRY OF ENTERPRISES AND MADE IN ITALY (NOC) / NSR",
+    period: "Marzo 2025 - Presente",
+    description: "Gestione dell'infrastruttura di oltre 200 siti e 3 Data Center. Migrazione DC e upgrade siti (Cisco, Fortinet). Configurazione DNS pubblici, F5 BIG-IP (WAF), e implementazione di SD-WAN, FortiNAC e sistemi di monitoraggio (LibreNMS, Oxidized)."
+  },
+  {
+    role: "CyberSecurity Consultant & SysNet Admin",
+    company: "NETWORK OPERATIONS COMMAND (COR) / FATA INFORMATICA",
+    period: "Settembre 2024 - Marzo 2025",
+    description: "Consulenza di sicurezza, incident response e network troubleshooting. Ingegnerizzazione di policy su Fortinet Security Fabric e sistemi Arbor Anti-DDoS. Manutenzione infrastrutture Cisco e Mellanox."
+  },
+  {
+    role: "Linux System Administrator",
+    company: "NETWORK OPERATIONS COMMAND (COR) / FATA INFORMATICA",
+    period: "Settembre 2023 - Settembre 2024",
+    description: "Configurazione di app di rete e monitoraggio con Sentinet3 (Nagios). Automazione workflow, gestione DNS di branch (Bind9 + DNSMasq + Nginx) e sviluppo di un sistema globale di alert BGP."
+  },
+  {
+    role: "CyberSecurity Intern",
+    company: "FATA INFORMATICA",
+    period: "Gennaio 2023 - Settembre 2023",
+    description: "Tuning di sistemi Sentinet3, simulazioni di Threat Hunting e Malware Analysis. Esecuzione di indagini OSINT, Penetration Testing e Vulnerability Assessment."
+  }
+];
+
+const skills = [
+  { category: "Languages & Frameworks", items: "Python, Bash, C++, PHP, TypeScript, JavaScript, React, Node.js, Flask" },
+  { category: "Network & Security", items: "F5 BIG-IP, Fortinet Suite (FortiGate, FortiManager, FortiNAC), Arbor Anti-DDoS, Metasploit, BurpSuite, Wireshark, Nmap" },
+  { category: "Operating Systems", items: "Linux (Debian, RHEL, Kali, Arch), Cisco OS (IOS, XE, XR), FortiOS, Windows Server" },
+  { category: "Infrastructure & Protocols", items: "Nginx, Splunk, Nagios, VMware ESXi, Nutanix, BGP, OSPF, IPSEC, DNS" }
+];
+---
+
+<Layout title="Francesco DI RIENZO - Portfolio">
+	<main>
+		<header class="hero">
+			<h1>{profile.name}</h1>
+			<h2>{profile.role}</h2>
+			<p>{profile.bio}</p>
+			
+			<div class="links">
+				<a href={`mailto:${profile.email}`}>Email</a>
+				<a href={profile.github} target="_blank">GitHub</a>
+				<a href={profile.linkedin} target="_blank">LinkedIn</a>
+			</div>
+		</header>
+
+		<hr />
+
+		<section class="experience">
+			<h2>Esperienza Lavorativa</h2>
+			<div class="timeline">
+				{experiences.map((exp) => (
+					<div class="card">
+						<h3>{exp.role}</h3>
+						<p class="company"><strong>{exp.company}</strong> | {exp.period}</p>
+						<p class="desc">{exp.description}</p>
+					</div>
+				))}
+			</div>
+		</section>
+
+		<hr />
+
+		<section class="skills">
+			<h2>Competenze Tecniche</h2>
+			<div class="grid">
+				{skills.map((skill) => (
+					<div class="card">
+						<h3>{skill.category}</h3>
+						<p>{skill.items}</p>
+					</div>
+				))}
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+	.hero h1 {
+		font-size: 3rem;
+		margin-bottom: 0.5rem;
+	}
+	.hero h2 {
+		font-size: 1.5rem;
+		color: #94a3b8;
+		margin-bottom: 1.5rem;
+	}
+	.hero p {
+		font-size: 1.1rem;
+		max-width: 700px;
+		margin-bottom: 2rem;
+	}
+	.links {
+		display: flex;
+		gap: 1.5rem;
+	}
+	.links a {
+		padding: 0.5rem 1rem;
+		border: 1px solid var(--accent);
+		border-radius: 4px;
+		transition: all 0.2s ease;
+	}
+	.links a:hover {
+		background-color: var(--accent);
+		color: var(--bg-color);
+		text-decoration: none;
+	}
+	hr {
+		border: 0;
+		height: 1px;
+		background: #334155;
+	}
+	.card {
+		background-color: var(--card-bg);
+		padding: 1.5rem;
+		border-radius: 8px;
+		margin-bottom: 1.5rem;
+	}
+	.company {
+		font-size: 0.9rem;
+		color: #cbd5e1;
+		margin-bottom: 1rem;
+	}
+	.desc {
+		font-size: 0.95rem;
+		color: #e2e8f0;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+	}
+	.grid .card {
+		margin-bottom: 0;
+	}
+</style>
