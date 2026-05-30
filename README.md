@@ -1,27 +1,17 @@
-- About me:
- 
-  👋 Hi, I'm @france5cogreen
-  
-  💼 I work as a NOC Engineer, but specialized in system administration and security
-  
-  👀 My passion lies in software development and expanding my expertise in cybersecurity and penetration testing
-  
-  🌱 Currently pursuing the CCNA Network Security certification; FCP Network Security, VCP and OSCP are my next goal
-  
-  🔍 Enthusiastic about project management tools, I've developed customed solutions to enhance my productivity
-  
-  💡 I'm open to collaborating on open-source projects, especially focused on cybersecurity, Linux automation, and emerging technologies
-  
+## About Me
 
-- Contact
-  
-  📫 Reach me at: francesco.di.rienzo.00@gmail.com
+[cite_start]I am a Network Engineer with a strong background in Linux system administration and a deep interest in cybersecurity and offensive security[cite: 2, 9, 26]. [cite_start]My professional focus is on securing infrastructures, automating technical workflows, and continually expanding my expertise in ethical hacking[cite: 9, 12]. 
 
-- Fun Facts:
-  
-  ⚡ I love automation and efficiency, always looking for ways to optimize workflows and grow up new ideas
-  
-  🎯 I wanna build my own IT company
-  
-  ♕  I'm passionate about chess... if only I was a stronger player😂
-  
+* [cite_start]**Current Goals:** Preparing for the OSCP (Offensive Security Certified Professional), while finalizing the FCP Network Security and VCP (VMware Certified Professional) certifications[cite: 10].
+* **Core Interests:** Cybersecurity, Linux administration, open-source collaboration, and the development of custom tools to enhance operational productivity.
+* **Work Approach:** I am highly driven by automation and efficiency. [cite_start]I constantly look for ways to optimize existing workflows and implement effective project management strategies[cite: 66, 68].
+
+## Contact
+
+* [cite_start]**Email:** francesco.di.rienzo.00@gmail.com [cite: 4]
+* [cite_start]**LinkedIn:** linkedin.com/in/francesco-di-rienzo [cite: 3]
+* [cite_start]**GitHub:** github.com/france5cogreen [cite: 5]
+
+## Beyond the Screen
+
+My long-term career ambition is to build and lead my own IT company. When I am not optimizing networks or studying for security certifications, you can usually find me playing chess—always working on improving my game.
