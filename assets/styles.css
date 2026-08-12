@@ -679,9 +679,14 @@ section { padding: 110px 0; position: relative; }
 .cert .status.prep { color: var(--accent-1); }
 .cert .status.final .sd { background: #f5b942; box-shadow: 0 0 10px rgba(245,185,66,0.4); }
 .cert .status.final { color: #f5c97a; }
+.cert .status.done .sd { background: var(--accent-1); box-shadow: 0 0 12px var(--accent-glow); }
+.cert .status.done { color: var(--accent-1); }
 .cert .bar-track { margin-top: 18px; height: 4px; border-radius: 100px; background: rgba(255,255,255,0.06); overflow: hidden; }
 .cert .bar-fill { height: 100%; border-radius: 100px; background: linear-gradient(90deg, var(--accent), var(--accent-1)); width: 0; transition: width 1.3s var(--ease); }
 .cert.final .bar-fill { background: linear-gradient(90deg, #e0992f, #f5c97a); }
+.cert.done { border-color: var(--accent-line); }
+.cert.done::before { opacity: 0.55; }
+.cert.done .badge { background: var(--accent); border-color: var(--accent); color: #05100b; }
 
 /* ---------- Languages + soft skills ---------- */
 .lang-soft { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }

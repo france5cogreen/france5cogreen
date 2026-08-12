@@ -10,16 +10,16 @@ const DATA = {
     meta: { lang: "EN" },
     nav: { about: "About", experience: "Experience", skills: "Skills", certs: "Certs", contact: "Contact" },
     hero: {
-      status: "Available for new opportunities",
+      status: "IT & Security Consultant @ Thaumazon",
       l1: "Francesco",
       l2: "Di Rienzo",
       roles: [
-        "Network Engineer",
-        "Cybersecurity Specialist",
-        "Linux System Administrator",
+        "IT & Security Consultant",
+        "Fortinet NSE 4 certified",
+        "Network & Security Engineer",
         "OSCP candidate // ethical hacking"
       ],
-      bio: "System Administrator with a strong passion for cybersecurity and offensive security — building, securing and scaling network infrastructure across data centers and 200+ sites.",
+      bio: "Network & security consultant specialised on the Fortinet stack — I design, migrate and harden firewall infrastructure, from high-availability clusters to centralised log management and secure remote access.",
       cta1: "Establish contact",
       cta2: "View experience",
       cv: "Download CV"
@@ -34,19 +34,19 @@ const DATA = {
       eyebrow: "// whoami",
       title: "Securing infrastructure, end to end.",
       lead: "From the physical layer to the application edge — I design, harden and operate networks that have to stay up.",
-      p1: "I'm a <strong>Linux & Network Systems Administrator</strong> currently engineering the network for the Italian Ministry of Enterprises, where I run the physical and logical infrastructure of 200+ sites and 3 main data-center hubs.",
-      p2: "My background spans <strong>offensive and defensive security</strong>: penetration testing, vulnerability assessment, incident response and threat hunting — alongside hands-on operations on Fortinet, Cisco, F5 and Arbor systems.",
-      p3: "I'm currently preparing for the <strong>OSCP</strong> and finalizing FCP & VCP certifications. I'm looking for a challenging role in a high-tech, dynamic environment to grow in ethical hacking.",
-      focus: ["Offensive Security", "Network Engineering", "Incident Response", "Automation"],
+      p1: "I'm an <strong>IT & Security Consultant at Thaumazon</strong>, a Fortinet-focused consultancy, where I design and deliver firewall migrations, high-availability clusters, centralised log management and secure remote access for public-sector and enterprise customers.",
+      p2: "Before that I engineered the network of the <strong>Italian Ministry of Enterprises (MIMIT)</strong>, running the physical and logical infrastructure of 200+ sites and 3 main data-center hubs, and worked on the Fortinet Security Fabric and Arbor Anti-DDoS systems for the Ministry of Defense.",
+      p3: "I'm <strong>Fortinet NSE 4</strong> certified, preparing for the <strong>OSCP</strong> and finalizing the VCP. My background spans both sides of security: penetration testing, vulnerability assessment, incident response and threat hunting.",
+      focus: ["Fortinet Architecture", "Network Engineering", "Offensive Security", "Automation"],
       term: {
         title: "francesco@infra: ~",
         host: "fdr-node",
         loc: "Rome — Minturno, IT",
-        role: "Network & Security Engineer",
+        role: "IT & Security Consultant",
         focusLabel: "focus",
-        focusVal: "OSCP / Red Team",
+        focusVal: "Fortinet / OSCP",
         statusLabel: "status",
-        statusVal: "open to work"
+        statusVal: "consulting @ Thaumazon"
       }
     },
     experience: {
@@ -55,7 +55,22 @@ const DATA = {
       lead: "Four years operating mission-critical networks for national infrastructure and IT-security firms.",
       items: [
         {
-          period: "Mar 2025 — Present", now: "NOW",
+          period: "Jun 2026 — Present", now: "NOW",
+          role: "IT & Security Consultant",
+          org: "Thaumazon — Fortinet consulting",
+          company: "Network security design & delivery",
+          bullets: [
+            "Firewall design & migration: replaced a FortiGate 100E with a two-node FortiGate 120G cluster in Active-Passive HA (FGCP with session pickup) for ANVUR.",
+            "Log management & SOCaaS: delivered an on-premise FortiAnalyzer 150G for centralised logging, reporting and alerting, with segregated inbound/outbound log traffic and readiness for SOC-as-a-Service integration.",
+            "Architecture & policy: rebuilt and optimised configurations via FortiConverter — segmentation across dozens of VLANs and trunking for SD-WAN uplinks.",
+            "VPN & secure access: hardened site-to-site IPsec (IKEv2) and SSL-VPN with multi-factor authentication (FortiToken), enforcing TLS 1.2 as the crypto floor.",
+            "Security assessment & hardening: cleaned up unused policies and objects, used Security Rating as a project KPI, and applied administrative hardening best practices.",
+            "Built an automated vulnerability-assessment pipeline for client estates (asset discovery, diffing and scanning with subfinder/httpx/naabu/nuclei, Telegram alerting)."
+          ],
+          tags: ["FortiGate 120G", "FortiAnalyzer", "FortiConverter", "FGCP HA", "IPsec IKEv2", "SSL-VPN", "FortiToken", "SD-WAN", "Security Rating"]
+        },
+        {
+          period: "Mar 2025 — Jun 2026",
           role: "Network Engineer",
           org: "Ministry of Enterprises and Made in Italy — NOC",
           company: "for NSR · Endpoint & Network Security",
@@ -112,10 +127,11 @@ const DATA = {
       groups: [
         { h: "Languages", items: ["Python", "Bash (awk, sed)", "C++", "PHP", "TypeScript", "JavaScript"] },
         { h: "Frameworks", items: ["Flask", "NumPy", "Pandas", "TensorFlow", "React", "Node.js", "Qt"] },
-        { h: "Network & Security", items: ["F5 BIG-IP", "Fortinet Suite", "SonicWall", "Alcatel", "Arbor Netscout", "Metasploit", "BurpSuite", "Wireshark", "Nmap", "Maltego"] },
+        { h: "Fortinet", items: ["FortiGate", "FortiAnalyzer", "FortiManager", "FortiConverter", "FortiNAC", "FortiToken", "FGCP HA", "SD-WAN", "Security Fabric", "Security Rating"] },
+        { h: "Network & Security", items: ["F5 BIG-IP", "SonicWall", "Alcatel", "Arbor Netscout", "Metasploit", "BurpSuite", "Wireshark", "Nmap", "Maltego", "Nuclei"] },
         { h: "Operating Systems", items: ["Cisco IOS / XE / XR", "FortiOS", "ArbOS", "Debian / Ubuntu", "RHEL / CentOS", "Arch", "Kali", "Windows Server"] },
         { h: "Infrastructure", items: ["Nginx", "Apache", "Splunk", "Grafana", "Nagios", "Bind9", "Nutanix", "VMware ESXi", "GNS3", "Lantime NTP"] },
-        { h: "Protocols", items: ["IPSEC", "BGP", "MPLS", "OSPF", "DNS", "SNMP", "SSH (SSL/TLS)", "HTTP/S", "TACACS", "RADIUS", "LDAP"] },
+        { h: "Protocols", items: ["IPsec / IKEv2", "BGP", "MPLS", "OSPF", "DNS", "SNMP", "SSH (SSL/TLS)", "HTTP/S", "TACACS", "RADIUS", "LDAP"] },
         { h: "Databases", items: ["Oracle", "MS SQL Server", "MySQL", "PostgreSQL", "InfluxDB"] },
         { h: "Dev Tools", items: ["Git", "GitLab", "Ansible", "Vim", "VS Code", "PyCharm"] }
       ]
@@ -123,10 +139,10 @@ const DATA = {
     certs: {
       eyebrow: "// credentials",
       title: "Certifications",
-      lead: "In active pursuit — sharpening the offensive and infrastructure edge.",
+      lead: "One in hand, two in active pursuit — sharpening the offensive and infrastructure edge.",
       items: [
+        { abbr: "NSE 4", name: "Network Security Professional", full: "Fortinet · achieved 2026", status: "Certified", state: "done", pct: 100 },
         { abbr: "OSCP", name: "Offensive Security Certified Professional", full: "PEN-200 · Offensive Security", status: "In preparation", state: "prep", pct: 65 },
-        { abbr: "FCP", name: "FCP Network Security", full: "Fortinet Certified Professional", status: "Finalizing", state: "final", pct: 85 },
         { abbr: "VCP", name: "VMware Certified Professional", full: "VMware · Data Center Virtualization", status: "Finalizing", state: "final", pct: 80 }
       ]
     },
@@ -147,7 +163,7 @@ const DATA = {
       eyebrow: "// uplink",
       title1: "Let's build something",
       title2: "secure.",
-      sub: "Open to challenging roles in high-tech, dynamic environments. Available for travel and professional development.",
+      sub: "Fortinet architectures, firewall migrations and network security projects. Happy to talk shop — available for travel and professional development.",
       cta1: "Send an email",
       cta2: "GitHub",
       labels: { email: "email", phone: "phone", loc: "location", gh: "github" }
@@ -159,16 +175,16 @@ const DATA = {
     meta: { lang: "IT" },
     nav: { about: "Chi sono", experience: "Esperienza", skills: "Competenze", certs: "Certificazioni", contact: "Contatti" },
     hero: {
-      status: "Disponibile per nuove opportunità",
+      status: "IT & Security Consultant @ Thaumazon",
       l1: "Francesco",
       l2: "Di Rienzo",
       roles: [
-        "Network Engineer",
-        "Specialista in Cybersecurity",
-        "Linux System Administrator",
+        "IT & Security Consultant",
+        "Certificato Fortinet NSE 4",
+        "Network & Security Engineer",
         "Candidato OSCP // ethical hacking"
       ],
-      bio: "System Administrator con una forte passione per la cybersecurity e l'offensive security — progetto, metto in sicurezza e scalo infrastrutture di rete su data center e oltre 200 siti.",
+      bio: "Consulente network & security specializzato sullo stack Fortinet — progetto, migro e metto in sicurezza infrastrutture firewall: dai cluster in alta affidabilità al log management centralizzato e agli accessi remoti sicuri.",
       cta1: "Mettiti in contatto",
       cta2: "Vedi l'esperienza",
       cv: "Scarica il CV"
@@ -183,19 +199,19 @@ const DATA = {
       eyebrow: "// whoami",
       title: "Sicurezza dell'infrastruttura, end to end.",
       lead: "Dal livello fisico all'edge applicativo — progetto, irrobustisco e gestisco reti che devono restare in piedi.",
-      p1: "Sono un <strong>Amministratore di Sistemi Linux e di Rete</strong> e attualmente curo la rete del Ministero delle Imprese, gestendo l'infrastruttura fisica e logica di oltre 200 siti e 3 hub data center principali.",
-      p2: "La mia esperienza copre la <strong>sicurezza offensiva e difensiva</strong>: penetration testing, vulnerability assessment, incident response e threat hunting — insieme alla gestione operativa di sistemi Fortinet, Cisco, F5 e Arbor.",
-      p3: "Sto preparando l'<strong>OSCP</strong> e finalizzando le certificazioni FCP e VCP. Cerco un ruolo stimolante in un ambiente high-tech e dinamico per crescere nell'ethical hacking.",
-      focus: ["Offensive Security", "Network Engineering", "Incident Response", "Automazione"],
+      p1: "Sono <strong>IT & Security Consultant in Thaumazon</strong>, società di consulenza specializzata Fortinet, dove progetto e realizzo migrazioni firewall, cluster in alta affidabilità, log management centralizzato e accessi remoti sicuri per clienti pubblici ed enterprise.",
+      p2: "Prima ho curato la rete del <strong>Ministero delle Imprese e del Made in Italy (MIMIT)</strong>, gestendo l'infrastruttura fisica e logica di oltre 200 siti e 3 hub data center, e ho lavorato sul Fortinet Security Fabric e sui sistemi Arbor Anti-DDoS per il Ministero della Difesa.",
+      p3: "Sono certificato <strong>Fortinet NSE 4</strong>, sto preparando l'<strong>OSCP</strong> e finalizzando la VCP. La mia esperienza copre entrambi i lati della sicurezza: penetration testing, vulnerability assessment, incident response e threat hunting.",
+      focus: ["Architetture Fortinet", "Network Engineering", "Offensive Security", "Automazione"],
       term: {
         title: "francesco@infra: ~",
         host: "fdr-node",
         loc: "Roma — Minturno, IT",
-        role: "Network & Security Engineer",
+        role: "IT & Security Consultant",
         focusLabel: "focus",
-        focusVal: "OSCP / Red Team",
+        focusVal: "Fortinet / OSCP",
         statusLabel: "stato",
-        statusVal: "disponibile"
+        statusVal: "consulenza @ Thaumazon"
       }
     },
     experience: {
@@ -204,7 +220,22 @@ const DATA = {
       lead: "Quattro anni alla gestione di reti mission-critical per infrastrutture nazionali e aziende di IT-security.",
       items: [
         {
-          period: "Mar 2025 — Presente", now: "ORA",
+          period: "Giu 2026 — Presente", now: "ORA",
+          role: "IT & Security Consultant",
+          org: "Thaumazon — consulenza Fortinet",
+          company: "Progettazione e delivery di sicurezza di rete",
+          bullets: [
+            "Migrazione e progettazione firewall: sostituzione di un FortiGate 100E con un cluster di due FortiGate 120G in alta affidabilità Active-Passive (FGCP con session pickup) nell'infrastruttura ANVUR.",
+            "Gestione log e SOCaaS: fornitura e implementazione di un FortiAnalyzer 150G on-premise per log management centralizzato, reportistica e alerting, con segregazione del traffico log in ingresso/uscita e predisposizione all'integrazione di servizi SOC as a Service.",
+            "Architettura e security policy: ripristino e ottimizzazione delle configurazioni tramite FortiConverter — segmentazione di rete su decine di VLAN e configurazione di trunk per connessioni SD-WAN.",
+            "VPN e accesso sicuro: configurazione e hardening di VPN site-to-site (IPsec, IKEv2) e VPN SSL per accessi remoti con autenticazione multifattore (FortiToken), inclusi adeguamenti crittografici (enforcing di TLS 1.2 come minimo).",
+            "Security assessment & hardening: bonifica di policy e oggetti non utilizzati, controlli basati su Security Rating come KPI di progetto e applicazione delle best practice di hardening amministrativo.",
+            "Realizzazione di una pipeline automatizzata di vulnerability assessment sul perimetro dei clienti (asset discovery, diffing e scansione con subfinder/httpx/naabu/nuclei, alerting su Telegram)."
+          ],
+          tags: ["FortiGate 120G", "FortiAnalyzer", "FortiConverter", "FGCP HA", "IPsec IKEv2", "VPN SSL", "FortiToken", "SD-WAN", "Security Rating"]
+        },
+        {
+          period: "Mar 2025 — Giu 2026",
           role: "Network Engineer",
           org: "Ministero delle Imprese e del Made in Italy — NOC",
           company: "per NSR · Endpoint & Network Security",
@@ -261,10 +292,11 @@ const DATA = {
       groups: [
         { h: "Linguaggi", items: ["Python", "Bash (awk, sed)", "C++", "PHP", "TypeScript", "JavaScript"] },
         { h: "Framework", items: ["Flask", "NumPy", "Pandas", "TensorFlow", "React", "Node.js", "Qt"] },
-        { h: "Network & Security", items: ["F5 BIG-IP", "Suite Fortinet", "SonicWall", "Alcatel", "Arbor Netscout", "Metasploit", "BurpSuite", "Wireshark", "Nmap", "Maltego"] },
+        { h: "Fortinet", items: ["FortiGate", "FortiAnalyzer", "FortiManager", "FortiConverter", "FortiNAC", "FortiToken", "FGCP HA", "SD-WAN", "Security Fabric", "Security Rating"] },
+        { h: "Network & Security", items: ["F5 BIG-IP", "SonicWall", "Alcatel", "Arbor Netscout", "Metasploit", "BurpSuite", "Wireshark", "Nmap", "Maltego", "Nuclei"] },
         { h: "Sistemi Operativi", items: ["Cisco IOS / XE / XR", "FortiOS", "ArbOS", "Debian / Ubuntu", "RHEL / CentOS", "Arch", "Kali", "Windows Server"] },
         { h: "Infrastruttura", items: ["Nginx", "Apache", "Splunk", "Grafana", "Nagios", "Bind9", "Nutanix", "VMware ESXi", "GNS3", "Lantime NTP"] },
-        { h: "Protocolli", items: ["IPSEC", "BGP", "MPLS", "OSPF", "DNS", "SNMP", "SSH (SSL/TLS)", "HTTP/S", "TACACS", "RADIUS", "LDAP"] },
+        { h: "Protocolli", items: ["IPsec / IKEv2", "BGP", "MPLS", "OSPF", "DNS", "SNMP", "SSH (SSL/TLS)", "HTTP/S", "TACACS", "RADIUS", "LDAP"] },
         { h: "Database", items: ["Oracle", "MS SQL Server", "MySQL", "PostgreSQL", "InfluxDB"] },
         { h: "Strumenti Dev", items: ["Git", "GitLab", "Ansible", "Vim", "VS Code", "PyCharm"] }
       ]
@@ -272,10 +304,10 @@ const DATA = {
     certs: {
       eyebrow: "// credenziali",
       title: "Certificazioni",
-      lead: "In corso di conseguimento — affinando il lato offensive e infrastrutturale.",
+      lead: "Una conseguita, due in corso — affinando il lato offensive e infrastrutturale.",
       items: [
+        { abbr: "NSE 4", name: "Network Security Professional", full: "Fortinet · conseguita nel 2026", status: "Conseguita", state: "done", pct: 100 },
         { abbr: "OSCP", name: "Offensive Security Certified Professional", full: "PEN-200 · Offensive Security", status: "In preparazione", state: "prep", pct: 65 },
-        { abbr: "FCP", name: "FCP Network Security", full: "Fortinet Certified Professional", status: "In finalizzazione", state: "final", pct: 85 },
         { abbr: "VCP", name: "VMware Certified Professional", full: "VMware · Data Center Virtualization", status: "In finalizzazione", state: "final", pct: 80 }
       ]
     },
@@ -296,7 +328,7 @@ const DATA = {
       eyebrow: "// uplink",
       title1: "Costruiamo qualcosa",
       title2: "di sicuro.",
-      sub: "Aperto a ruoli stimolanti in ambienti high-tech e dinamici. Disponibile per trasferte e crescita professionale.",
+      sub: "Architetture Fortinet, migrazioni firewall e progetti di sicurezza di rete. Sempre volentieri per parlarne — disponibile per trasferte e crescita professionale.",
       cta1: "Invia una email",
       cta2: "GitHub",
       labels: { email: "email", phone: "telefono", loc: "località", gh: "github" }
@@ -402,7 +434,7 @@ function render() {
   // certs
   fillHead("certs", d.certs);
   $("#cert-grid").innerHTML = d.certs.items.map((c, i) => `
-    <div class="cert reveal reveal-d${i + 1}${c.state === "final" ? " final" : ""}">
+    <div class="cert reveal reveal-d${i + 1} ${c.state}">
       <div class="badge">${c.abbr}</div>
       <h3>${c.name}</h3>
       <div class="full">${c.full}</div>

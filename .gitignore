@@ -1,0 +1,46 @@
+CLAUDE.md
+
+# Sorgenti LaTeX del CV: vivono in locale / su Overleaf.
+# Il PDF pubblicato resta versionato in assets/CV_DiRienzo.pdf
+CV/
+
+# Versione Astro del portfolio: non e' quella servita da GitHub Pages
+mio-portfolio/
+
+# Documenti di carriera personali
+bio_linkedin.md
+job_description.md
+
+# Duplicati e artefatti di sviluppo, non referenziati da portfolio.html.
+# NB: erano gia' tracciati sulla remota, servono i comandi git rm --cached
+# elencati nel report per farli sparire davvero dalla repo.
+uploads/
+screenshots/
+.thumbnail
+
+# Node / Astro
+node_modules/
+dist/
+.astro/
+.vercel/
+.env
+.env.*
+*.log
+
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
