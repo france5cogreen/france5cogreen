@@ -638,7 +638,7 @@ section { padding: 110px 0; position: relative; }
 }
 
 /* ---------- Certifications ---------- */
-.cert-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(232px, 1fr)); gap: 18px; }
 .cert {
   position: relative;
   border: 1px solid var(--line);
@@ -681,9 +681,13 @@ section { padding: 110px 0; position: relative; }
 .cert .status.final { color: #f5c97a; }
 .cert .status.done .sd { background: var(--accent-1); box-shadow: 0 0 12px var(--accent-glow); }
 .cert .status.done { color: var(--accent-1); }
+.cert .status.next .sd { background: var(--text-faint); }
+.cert .status.next { color: var(--text-dim); }
 .cert .bar-track { margin-top: 18px; height: 4px; border-radius: 100px; background: rgba(255,255,255,0.06); overflow: hidden; }
 .cert .bar-fill { height: 100%; border-radius: 100px; background: linear-gradient(90deg, var(--accent), var(--accent-1)); width: 0; transition: width 1.3s var(--ease); }
 .cert.final .bar-fill { background: linear-gradient(90deg, #e0992f, #f5c97a); }
+.cert.next { opacity: 0.72; }
+.cert.next .bar-fill { background: linear-gradient(90deg, rgba(255,255,255,0.18), rgba(255,255,255,0.32)); }
 .cert.done { border-color: var(--accent-line); }
 .cert.done::before { opacity: 0.55; }
 .cert.done .badge { background: var(--accent); border-color: var(--accent); color: #05100b; }
