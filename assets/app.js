@@ -36,7 +36,7 @@ const DATA = {
       lead: "From the physical layer to the application edge — I design, harden and operate networks that have to stay up.",
       p1: "I'm an <strong>IT & Security Consultant at Thaumazon</strong>, a Fortinet-focused consultancy, where I design and deliver firewall migrations, high-availability clusters, centralised log management and secure remote access for public-sector and enterprise customers.",
       p2: "Before that I engineered the network of the <strong>Italian Ministry of Enterprises (MIMIT)</strong>, running the physical and logical infrastructure spread across its nationwide sites and data-center hubs, and earlier I worked at the <strong>Network Operations Command (COR) of the Italian Ministry of Defense</strong>, on the Fortinet Security Fabric, Arbor Anti-DDoS systems and Linux infrastructure.",
-      p3: "I'm <strong>Fortinet NSE 4</strong> certified, with the NSE 6 as my next step, and I'm working towards the <strong>OSCP</strong> and the VCP. Everything on the offensive side is <strong>self-taught</strong> — penetration testing, vulnerability assessment and threat hunting — and I keep it sharp doing bug bounty on <strong>Bugcrowd</strong>.",
+      p3: "I'm <strong>Fortinet NSE 4</strong> certified and finalizing the <strong>NSE 6 on FortiNAC</strong>, while working towards the <strong>OSCP</strong> and the VCP. Everything on the offensive side is <strong>self-taught</strong> — penetration testing, vulnerability assessment and threat hunting — and I keep it sharp doing bug bounty on <strong>Bugcrowd</strong>.",
       focus: ["Fortinet Architecture", "Network Engineering", "Offensive Security", "Automation"],
       term: {
         title: "francesco@infra: ~",
@@ -142,9 +142,9 @@ const DATA = {
       lead: "One in hand, the rest in progress — sharpening the offensive and infrastructure edge.",
       items: [
         { abbr: "NSE 4", name: "Network Security Professional", full: "Fortinet · achieved 2026", status: "Certified", state: "done", pct: 100 },
+        { abbr: "NSE 6", name: "Network Security Specialist", full: "Fortinet · FortiNAC track", status: "Finalizing", state: "final", pct: 85 },
         { abbr: "OSCP", name: "Offensive Security Certified Professional", full: "PEN-200 · Offensive Security", status: "In preparation", state: "prep", pct: 50 },
-        { abbr: "VCP", name: "VMware Certified Professional", full: "VMware · Data Center Virtualization", status: "In preparation", state: "prep", pct: 35 },
-        { abbr: "NSE 6", name: "Network Security Specialist", full: "Fortinet · next step", status: "Planned", state: "next", pct: 10 }
+        { abbr: "VCP", name: "VMware Certified Professional", full: "VMware · Data Center Virtualization", status: "In preparation", state: "prep", pct: 35 }
       ]
     },
     languages: {
@@ -202,7 +202,7 @@ const DATA = {
       lead: "Dal livello fisico all'edge applicativo — progetto, irrobustisco e gestisco reti che devono restare in piedi.",
       p1: "Sono <strong>IT & Security Consultant in Thaumazon</strong>, società di consulenza specializzata Fortinet, dove progetto e realizzo migrazioni firewall, cluster in alta affidabilità, log management centralizzato e accessi remoti sicuri per clienti pubblici ed enterprise.",
       p2: "Prima ho curato la rete del <strong>Ministero delle Imprese e del Made in Italy (MIMIT)</strong>, gestendo l'infrastruttura fisica e logica distribuita sui suoi siti e hub data center a livello nazionale, e ancora prima ho lavorato al <strong>Comando Operazioni in Rete (COR) del Ministero della Difesa</strong>, sul Fortinet Security Fabric, sui sistemi Arbor Anti-DDoS e sull'infrastruttura Linux.",
-      p3: "Sono certificato <strong>Fortinet NSE 4</strong>, con la NSE 6 come prossimo obiettivo, e sto lavorando all'<strong>OSCP</strong> e alla VCP. Tutto il lato offensivo è <strong>da autodidatta</strong> — penetration testing, vulnerability assessment e threat hunting — e lo tengo allenato facendo bug bounty su <strong>Bugcrowd</strong>.",
+      p3: "Sono certificato <strong>Fortinet NSE 4</strong> e sto finalizzando la <strong>NSE 6 su FortiNAC</strong>, mentre lavoro all'<strong>OSCP</strong> e alla VCP. Tutto il lato offensivo è <strong>da autodidatta</strong> — penetration testing, vulnerability assessment e threat hunting — e lo tengo allenato facendo bug bounty su <strong>Bugcrowd</strong>.",
       focus: ["Architetture Fortinet", "Network Engineering", "Offensive Security", "Automazione"],
       term: {
         title: "francesco@infra: ~",
@@ -308,9 +308,9 @@ const DATA = {
       lead: "Una conseguita, le altre in corso — affinando il lato offensive e infrastrutturale.",
       items: [
         { abbr: "NSE 4", name: "Network Security Professional", full: "Fortinet · conseguita nel 2026", status: "Conseguita", state: "done", pct: 100 },
+        { abbr: "NSE 6", name: "Network Security Specialist", full: "Fortinet · percorso FortiNAC", status: "In finalizzazione", state: "final", pct: 85 },
         { abbr: "OSCP", name: "Offensive Security Certified Professional", full: "PEN-200 · Offensive Security", status: "In preparazione", state: "prep", pct: 50 },
-        { abbr: "VCP", name: "VMware Certified Professional", full: "VMware · Data Center Virtualization", status: "In preparazione", state: "prep", pct: 35 },
-        { abbr: "NSE 6", name: "Network Security Specialist", full: "Fortinet · prossimo obiettivo", status: "In programma", state: "next", pct: 10 }
+        { abbr: "VCP", name: "VMware Certified Professional", full: "VMware · Data Center Virtualization", status: "In preparazione", state: "prep", pct: 35 }
       ]
     },
     languages: {
